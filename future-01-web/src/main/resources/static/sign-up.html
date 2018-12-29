@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Minimal and Clean Sign up / Login and Forgot Form by FreeHTML5.co</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Template by FreeHTML5.co"/>
+    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive"/>
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content=""/>
+    <meta name="twitter:image" content=""/>
+    <meta name="twitter:url" content=""/>
+    <meta name="twitter:card" content=""/>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#submit").click(function () {
+                // $.post(
+                //     "http://10.10.16.101:9090/future-01-web/user/signUp",
+                //     {
+                //         username: $("#username").val(),
+                //         email: $("#email").val(),
+                //         nickname: $("#nickname").val(),
+                //         password: $("#password").val()
+                //     },
+                //     function (data) {
+                //         alert("Data Loaded: " + data);
+                //         var response = $.parseJSON(data);
+                //         if (0 == response.code) {
+                //             window.location.href = "./main.html"
+                //         } else {
+                //             alert("注册失败，请重新填写信息");
+                //         }
+                //     },
+                //     "text"
+                // );
+
+                // JS中设置window.location.href跳转无效:
+                // 会先执行form提交,提交之后 就已经不在当前页面了。所以 window.location.href无效。
+                // 这个属性放到提交表单中的onclick事件中在这次点击事件不会提交表单
+                window.event.returnValue=false;
+                $.ajax({
+                    type: "post",
+                    url: "http://10.10.16.101:9090/future-01-web/user/signUp",
+                    data: {
+                        username: $("#username").val(),
+                        email: $("#email").val(),
+                        nickname: $("#nickname").val(),
+                        password: $("#password").val()
+                    },
+                    cache: false,
+                    async: false,
+                    dataType: "text",
+                    success: function (data, textStatus, jqXHR) {
+                        var response = $.parseJSON(data);
+                        if (0 == response.code) {
+                            window.location.href = "./main.html"
+                        } else {
+                            alert("注册失败，请重新填写信息");
+                        }
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        alert("请求失败！");
+                    }
+                });
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+
+            <!-- Start Sign In Form -->
+            <form class="fh5co-form animate-box" data-animate-effect="fadeIn">
+                <h2>Sign Up</h2>
+                <div class="form-group">
+                    <div class="alert alert-success" role="alert">Your info has been saved.</div>
+                </div>
+                <div class="form-group">
+                    <label for="username" class="sr-only">Name</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="nickname" class="sr-only">Name</label>
+                    <input type="text" class="form-control" id="nickname" placeholder="Nickname" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="sr-only">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="re-password" class="sr-only">Re-type Password</label>
+                    <input type="password" class="form-control" id="re-password" placeholder="Re-type Password"
+                           autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="remember"><input type="checkbox" id="remember"> Remember Me</label>
+                </div>
+                <div class="form-group">
+                    <p>Already registered? <a href="index.html">Sign In</a></p>
+                </div>
+                <div class="form-group">
+                    <input type="submit" id="submit" value="Sign Up" class="btn btn-primary">
+                </div>
+            </form>
+            <!-- END Sign In Form -->
+
+        </div>
+    </div>
+    <div class="row" style="padding-top: 60px; clear: both;">
+        <div class="col-md-12 text-center">
+            <p>
+                <small>&copy; All Rights Reserved. More Templates <a href="http://www.cssmoban.com/" target="_blank"
+                                                                     title="模板之家">模板之家</a> - Collect from <a
+                        href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></small>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Placeholder -->
+<script src="js/jquery.placeholder.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Main JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
