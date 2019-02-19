@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>future-01-web</module>
+        <module>future-02-testingwork</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
