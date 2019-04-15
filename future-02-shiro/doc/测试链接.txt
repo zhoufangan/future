@@ -1,0 +1,6 @@
+参考文章：
+shiro入门
+https://www.cnblogs.com/Java3y/p/8615275.html
+
+md5加密工具类
+https://blog.csdn.net/mmd1234520/article/details/70210002
