@@ -2,26 +2,21 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <artifactId>future</artifactId>
         <groupId>com.zhoufa</groupId>
         <version>1.0.0</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>future-01-web</artifactId>
-    <packaging>jar</packaging>
-    <name>future-01-web Maven Webapp</name>
+    <artifactId>future-02-shiro</artifactId>
+    <name>future-02-shiro</name>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
         </dependency>
 
         <dependency>
@@ -31,14 +26,14 @@
     </dependencies>
 
     <build>
-        <finalName>future-01-web</finalName>
+        <finalName>future-02-shiro</finalName>
         <!-- 打包成可执行jar的 -->
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.zhoufa.future.Future01WebApplication</mainClass>
+                    <mainClass>com.zhoufa.future.Future02ShiroApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

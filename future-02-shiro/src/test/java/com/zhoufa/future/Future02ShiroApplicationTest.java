@@ -1,4 +1,4 @@
-package com.zhoufa;
+package com.zhoufa.future;
 
 import static org.junit.Assert.assertTrue;
 
@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class Future02TestingWorkApplicationTest {
+public class Future02ShiroApplicationTest {
 
     @Test
     public void shouldAnswerWithTrue() {

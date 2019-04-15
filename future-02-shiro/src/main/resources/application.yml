@@ -2,7 +2,7 @@ spring:
   profiles:
     active: win
   application:
-      name: future-02-testingwork
+      name: future-02-shiro
   http:
     encoding:
       charset: UTF-8
@@ -15,7 +15,7 @@ spring:
 server:
   port: 9090
   servlet:
-    context-path: /future-02-testingwork/
+    context-path: /future-02-shiro/
 
 logging:
   file: /logs/${spring.application.name}.log
