@@ -72,8 +72,12 @@ public class SysService {
      * @return 系统用户
      */
     private SysUser findSysUserByUserCode(String userCode) {
-        SysUser sysUser = new SysUser();
-        return sysUser;
+        SysUser user = new SysUser();
+        user.setId(1 + "");
+        user.setUserCode(userCode);
+        user.setUsername("root");
+        user.setPassword("123456");
+        return user;
     }
 
 
