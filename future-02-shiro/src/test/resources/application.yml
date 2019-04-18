@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: win
+  application:
+      name: future-02-shiro
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+  mvc:
+    view:
+      prefix: /
+      suffix: .do
+
+server:
+  port: 9090
+  servlet:
+    context-path: /future-02-shiro/
+
+logging:
+  file: /logs/${spring.application.name}.log
