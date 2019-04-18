@@ -1,6 +1,9 @@
 参考文章：
-shiro入门
-https://www.cnblogs.com/Java3y/p/8615275.html
+shiro入门：这里面是测试类
+https://blog.csdn.net/haomazdl/article/details/83508915
 
 md5加密工具类
 https://blog.csdn.net/mmd1234520/article/details/70210002
+
+shiro入门
+https://www.cnblogs.com/Java3y/p/8615275.html
