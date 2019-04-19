@@ -8,7 +8,7 @@ import java.util.List;
  * @author zhoufangan. Created in 2019/4/18 17:36.
  * @version V1.0
  */
-public interface ResourcesService {
+public interface SysResourcesService {
     List<Resources> listAll();
 
     List<Resources> listByUserId(Long userId);

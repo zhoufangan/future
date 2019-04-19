@@ -60,7 +60,12 @@
                 <artifactId>shiro-ehcache</artifactId>
                 <version>1.4.0</version>
             </dependency>
-
+            <!-- https://mvnrepository.com/artifact/org.crazycake/shiro-redis -->
+            <dependency>
+                <groupId>org.crazycake</groupId>
+                <artifactId>shiro-redis</artifactId>
+                <version>3.2.3</version>
+            </dependency>
             <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
             <dependency>
                 <groupId>commons-codec</groupId>
@@ -81,6 +86,28 @@
                 <version>1.18.6</version>
                 <scope>provided</scope>
             </dependency>
+
+            <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>3.0.1</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>2.1.4.RELEASE</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>27.1-jre</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

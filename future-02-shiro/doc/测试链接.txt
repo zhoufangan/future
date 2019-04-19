@@ -2,6 +2,9 @@
 shiro入门：这里面是测试类
 https://blog.csdn.net/haomazdl/article/details/83508915
 
+30分钟学会如何使用Shiro:
+http://www.cnblogs.com/learnhow/p/5694876.html
+
 md5加密工具类
 https://blog.csdn.net/mmd1234520/article/details/70210002
 
