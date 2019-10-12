@@ -1,0 +1,8 @@
+redis:
+  database:
+  host: 192.168.2.102
+  password: 123456
+  port: 6379
+
+activemq:
+  url: tcp://192.168.2.102:61616
