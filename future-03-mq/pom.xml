@@ -9,10 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>futrue-03-mq</artifactId>
+    <artifactId>future-03-mq</artifactId>
     <packaging>pom</packaging>
 
-    <name>futrue-03-mq</name>
+    <name>future-03-mq</name>
 
     <modules>
         <module>future-03-mq-ActiveMQ</module>
