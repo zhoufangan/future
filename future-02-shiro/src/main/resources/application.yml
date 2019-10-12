@@ -23,4 +23,4 @@ server:
     context-path: /future-02-shiro/
 
 logging:
-  file: /logs/${spring.application.name}.log
+  file: ./runtime/logs/${spring.application.name}.log

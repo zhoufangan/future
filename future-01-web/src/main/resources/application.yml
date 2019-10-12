@@ -18,4 +18,4 @@ server:
     context-path: /future-01-web/
 
 logging:
-  file: /logs/${spring.application.name}.log
+  file: ./runtime/logs/${spring.application.name}.log
