@@ -18,5 +18,6 @@
         <module>future-03-mq-ActiveMQ</module>
         <module>future-03-mq-RabbitMQ</module>
         <module>future-03-mq-Kafka</module>
+        <module>future-03-mq-RocketMQ</module>
     </modules>
 </project>
