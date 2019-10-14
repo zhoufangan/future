@@ -15,13 +15,16 @@ https://www.jianshu.com/p/912701cf1705
 https://www.cnblogs.com/buyige/p/9378102.html
 3.RocketMQ原理&最佳实践
 https://www.jianshu.com/p/2838890f3284
-
 4.rocketmq(三 java操作rocket API, rocketmq 幂等性)
 https://www.cnblogs.com/920913cheng/p/10730497.html
+RocketMQ底层原理和源码解析
+https://blog.csdn.net/qq_27641935/article/details/86539980
 
 RabbitMQ：
-
-
+RabbitMQ入门学习
+https://blog.csdn.net/cairuojin/article/details/81912033
+rabbitmq面试题
+https://blog.csdn.net/qq_42629110/article/details/84965084
 
 
 Kafka：
