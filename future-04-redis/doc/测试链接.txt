@@ -1,0 +1,4 @@
+redis面试是重中之重！
+
+超强、超详细Redis入门教程【转】：
+https://www.cnblogs.com/qqflying/p/9192331.html

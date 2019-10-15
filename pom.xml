@@ -14,6 +14,7 @@
         <module>future-01-web</module>
         <module>future-02-shiro</module>
         <module>future-03-mq</module>
+        <module>future-04-redis</module>
     </modules>
 
     <groupId>com.zhoufa</groupId>
