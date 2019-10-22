@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 public class Future04RedisApplication {
+
     public static void main(String[] args) {
 
         SpringApplication.run(Future04RedisApplication.class, args);

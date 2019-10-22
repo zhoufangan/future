@@ -1,8 +1,8 @@
 redis:
   database:
-  host: 192.168.1.75
+  host: 192.168.2.99
   password: 123456
   port: 6379
 
 RocketMQ:
-  url: tcp://192.168.1.75:61616
+  url: tcp://192.168.2.99:61616
