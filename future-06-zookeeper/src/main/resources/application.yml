@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: win
+  application:
+      name: future-06-zookeeper
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+  mvc:
+    view:
+      prefix: /
+      suffix: .do
+
+server:
+  port: 9090
+  servlet:
+    context-path: /future-06-zookeeper/
+
+logging:
+  file: ./runtime/logs/${spring.application.name}.log

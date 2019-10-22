@@ -15,6 +15,8 @@
         <module>future-02-shiro</module>
         <module>future-03-mq</module>
         <module>future-04-redis</module>
+        <module>future-05-dubbo</module>
+        <module>future-06-zookeeper</module>
     </modules>
 
     <groupId>com.zhoufa</groupId>
