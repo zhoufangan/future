@@ -12,7 +12,7 @@ import java.io.IOException;
  * @version V1.0
  */
 @Component
-public class ZooKeeperHelloWorld {
+public class Demo_01_ZooKeeperHelloWorld {
 
     @Value("${zookeeper.connectString}")
     private String connectString;

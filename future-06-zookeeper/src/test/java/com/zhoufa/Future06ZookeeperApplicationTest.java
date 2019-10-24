@@ -1,6 +1,6 @@
 package com.zhoufa;
 
-import com.zhoufa.zookeeper.ZooKeeperHelloWorld;
+import com.zhoufa.zookeeper.Demo_01_ZooKeeperHelloWorld;
 import org.apache.zookeeper.KeeperException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,12 +18,12 @@ import java.io.IOException;
 public class Future06ZookeeperApplicationTest {
 
     @Autowired
-    private ZooKeeperHelloWorld zooKeeperHelloWorld;
+    private Demo_01_ZooKeeperHelloWorld demo01ZooKeeperHelloWorld;
 
     @Test
-    public void helloWorldTest() {
+    public void demo01_helloWorldTest() {
         try {
-            zooKeeperHelloWorld.helloWorld();
+            demo01ZooKeeperHelloWorld.helloWorld();
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
